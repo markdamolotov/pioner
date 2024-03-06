@@ -1,0 +1,29 @@
+.header-menu {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+  }
+
+  &__item {
+    line-height: 1.2;
+
+  }
+
+  &__link {
+
+    &:focus-visible {
+      outline: var(--outline);
+      outline-offset: 0;
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+
+    &:active {
+      color: darken(#607ce6, 15%);
+    }
+  }
+}

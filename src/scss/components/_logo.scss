@@ -1,0 +1,21 @@
+.logo {
+  display: inline-flex;
+  color: var(--color-accent);
+
+  &--light {
+    color: var(--color-light);
+  }
+
+  &:focus-visible {
+    outline: var(--outline);
+    outline-offset: 0;
+  }
+
+  @include hover {
+    opacity: .8;
+  }
+
+  &:active {
+    color: darken(#607ce6, 15%);
+  }
+}
