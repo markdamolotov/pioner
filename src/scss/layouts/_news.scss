@@ -1,0 +1,9 @@
+.news {
+  padding-bottom: var(--section-padding-y);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--gap);
+  }
+}

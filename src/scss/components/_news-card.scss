@@ -1,0 +1,46 @@
+.news-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 478px;
+  background-color: var(--color-light-gray);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 16px 16px 24px;
+  }
+
+  &__description {
+    font-size: 20px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__link {
+    line-height: 1.2;
+    color: var(--color-accent);
+
+    &:focus-visible {
+      outline: var(--outline);
+      outline-offset: 0;
+    }
+
+    @include hover {
+      opacity: .8;
+    }
+
+    &:active {
+      color: darken(#607ce6, 15%);
+    }
+  }
+
+  &__date {
+    color: var(--color-gray);
+  }
+}
