@@ -1,0 +1,15 @@
+.about {
+
+  &__description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px var(--gap);
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+    padding-top: 32px;
+  }
+}
