@@ -1,0 +1,24 @@
+.section {
+  padding-top: var(--section-padding-y);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap);
+  }
+
+  &__title {
+    max-width: 580px;
+  }
+
+  &__description {
+    max-width: 380px;
+    line-height: 1.2;
+  }
+}
